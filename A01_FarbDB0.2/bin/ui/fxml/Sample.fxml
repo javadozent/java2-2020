@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="261.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.FarbenController">
+	<center>
+		<TableView fx:id="tableView" prefHeight="308.0" prefWidth="390.0">
+			<columns>
+				<TableColumn fx:id="idCol" prefWidth="75.0" text="Id" />
+				<TableColumn fx:id="nameCol" prefWidth="139.0" text="Name" />
+				<TableColumn fx:id="hexWertCol" prefWidth="223.0" text="Hex-Wert" />
+			</columns>
+		</TableView>
+	</center>
+	<top>
+		<ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+			<items>
+				<TextField fx:id="farbeField" promptText="Farbe" />
+				<TextField fx:id="hexField" promptText="Hex Wert" />
+				<Button mnemonicParsing="false" onAction="#onSave" text="Save" />
+				<Button mnemonicParsing="false" onAction="#onDelete" text="Delete" />
+			</items>
+		</ToolBar>
+	</top>
+</BorderPane>

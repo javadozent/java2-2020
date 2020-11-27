@@ -1,0 +1,4 @@
+[INFO ] 2020-10-22 11:46:44.632 [main]  - App start
+[DEBUG] 2020-10-22 11:46:44.676 [main] A - 3
+[WARN ] 2020-10-22 11:46:44.688 [main] A - Temperatur zu niedrig -3
+[INFO ] 2020-10-22 11:46:44.689 [main]  - App end

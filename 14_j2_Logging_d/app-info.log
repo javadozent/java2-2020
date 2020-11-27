@@ -1,0 +1,6 @@
+[INFO ] 2020-10-22 11:51:05.446 [main]  - App start
+[DEBUG] 2020-10-22 11:51:05.462 [main] A - 3
+[TRACE] 2020-10-22 11:51:05.462 [main] A - 4
+[WARN ] 2020-10-22 11:51:05.465 [main] A - Temperatur zu niedrig -3 weitere infos...
+[ERROR] 2020-10-22 11:51:05.466 [main] A - java.lang.NullPointerException: Cannot invoke "String.chars()" because "s" is null
+[INFO ] 2020-10-22 11:51:05.467 [main]  - App end

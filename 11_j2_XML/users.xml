@@ -1,0 +1,16 @@
+<?xml version="1.0"  ?>
+<userlist>
+	<!-- Kommentar -->
+	<user id="1">
+		<vorname>Max</vorname>
+		<nachname>Meier</nachname>
+		<email>meier@web.de</email>
+	</user>
+	<user id="2">
+		<vorname>Ina</vorname>
+		<nachname>Müller</nachname>
+		<email>müller@web.de</email>
+		<adresse/>>
+	</user>
+
+</userlist> 

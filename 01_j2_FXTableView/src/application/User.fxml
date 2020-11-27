@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="286.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserController">
+   <center>
+      <TableView editable="true" fx:id="userTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="vornnameCol" prefWidth="142.0" text="Vorname" onEditCommit="#onEditCommit" />
+          <TableColumn fx:id="nachnameCol" prefWidth="168.0" text="Nachname" />
+          <TableColumn fx:id="gebCol" minWidth="0.0" prefWidth="274.0" text="Geburtsdatum" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <TextField fx:id="vornameField" promptText="Vorname" />
+            <TextField fx:id="nachnameField" promptText="Nachname" />
+            <DatePicker fx:id="gebField" promptText="Guburtsdatum" />
+          <Button mnemonicParsing="false" onAction="#onSave" text="Save" />
+            <Button mnemonicParsing="false" onAction="#onDelete" prefHeight="25.0" prefWidth="90.0" text="Delete" />
+        </items>
+      </ToolBar>
+   </top>
+</BorderPane>
